@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Demos\AirplaneDemo.cpp" />
+    <ClCompile Include="Demos\BridgeDemo.cpp" />
+    <ClCompile Include="Collision\BroadPhase.cpp" />
+    <ClCompile Include="Application\application.cpp" />
+    <ClCompile Include="Dynamics\body.cpp" />
+    <ClCompile Include="Dynamics\cloth.cpp" />
+    <ClCompile Include="Demos\ClothDemo.cpp" />
+    <ClCompile Include="Demos\CollisionTest.cpp" />
+    <ClCompile Include="Collision\contacts.cpp" />
+    <ClCompile Include="DebugRender\DebugDrawManager.cpp" />
+    <ClCompile Include="Dynamics\force_gen.cpp" />
+    <ClCompile Include="Imgui\imgui.cpp" />
+    <ClCompile Include="Application\main.cpp" />
+    <ClCompile Include="Math\Matrix3X3.cpp" />
+    <ClCompile Include="Math\Matrix3X4.cpp" />
+    <ClCompile Include="Collision\NarrowPhase.cpp" />
+    <ClCompile Include="Dynamics\particle.cpp" />
+    <ClCompile Include="Dynamics\pcontacts.cpp" />
+    <ClCompile Include="Dynamics\pfGen.cpp" />
+    <ClCompile Include="Demos\Physics_Engine_Demo.cpp" />
+    <ClCompile Include="Dynamics\plinks.cpp" />
+    <ClCompile Include="Demos\ProjectileDemo.cpp" />
+    <ClCompile Include="Math\random.cpp" />
+    <ClCompile Include="Application\timer.cpp" />
+    <ClCompile Include="Dynamics\pworld.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Demos\AirplaneDemo.h" />
+    <ClInclude Include="Application\application.h" />
+    <ClInclude Include="Dynamics\body.h" />
+    <ClInclude Include="Demos\BridgeDemo.h" />
+    <ClInclude Include="Collision\BroadPhase.h" />
+    <ClInclude Include="Dynamics\cloth.h" />
+    <ClInclude Include="Demos\ClothDemo.h" />
+    <ClInclude Include="Demos\CollisionTest.h" />
+    <ClInclude Include="Dynamics\constraint.h" />
+    <ClInclude Include="Collision\contacts.h" />
+    <ClInclude Include="Math\core.h" />
+    <ClInclude Include="DebugRender\DebugDrawManager.h" />
+    <ClInclude Include="Dynamics\force_gen.h" />
+    <ClInclude Include="Imgui\imconfig.h" />
+    <ClInclude Include="Imgui\imgui.h" />
+    <ClInclude Include="Math\Matrix3X3.h" />
+    <ClInclude Include="Math\Matrix3X4.h" />
+    <ClInclude Include="Collision\NarrowPhase.h" />
+    <ClInclude Include="Dynamics\particle.h" />
+    <ClInclude Include="Dynamics\pcontacts.h" />
+    <ClInclude Include="Dynamics\pfGen.h" />
+    <ClInclude Include="Demos\Physics_Engine_Demo.h" />
+    <ClInclude Include="Dynamics\plinks.h" />
+    <ClInclude Include="Math\precision.h" />
+    <ClInclude Include="Demos\ProjectileDemo.h" />
+    <ClInclude Include="Math\Quaternion.h" />
+    <ClInclude Include="Math\random.h" />
+    <ClInclude Include="Imgui\stb_rect_pack.h" />
+    <ClInclude Include="Imgui\stb_textedit.h" />
+    <ClInclude Include="Imgui\stb_truetype.h" />
+    <ClInclude Include="Application\Timer.h" />
+    <ClInclude Include="Math\Vector3.h" />
+    <ClInclude Include="Dynamics\pworld.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgui.ini" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8DB39489-C9C6-4159-B552-8A0743C21D06}</ProjectGuid>
+    <RootNamespace>Physics_Engine</RootNamespace>
+    <ProjectName>Physics Engine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>D:\OpenGL_Wrappers\GLFW\lib-vc2013;D:\OpenGL_Wrappers\GL</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glut32.lib;legacy_stdio_definitions.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\OpenGL_Wrappers\GLFW\lib-vc2013;D:\OpenGL_Wrappers\GL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glut32.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>NotSet</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

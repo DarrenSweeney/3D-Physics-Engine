@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Imgui">
+      <UniqueIdentifier>{ae79b262-ee9f-4353-ae24-ba2c41f4c743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics">
+      <UniqueIdentifier>{ea1dd499-3bdf-488d-ba57-5ab551a9d6a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World">
+      <UniqueIdentifier>{f5fea495-35e1-4832-80a1-2e6b4e55a130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{0dc177e6-e89c-45cb-9ae0-96b2b34394a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Particle Engine">
+      <UniqueIdentifier>{fd38e4d2-4863-4486-8549-33d32bc372ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Particle Engine\Particle Engine">
+      <UniqueIdentifier>{a4720da1-726f-466e-a439-920fddd61f45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{a347121a-7ad0-4d81-8448-f7e5335f0f46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DebugRender">
+      <UniqueIdentifier>{9fadcb1f-60ae-4cc2-bdda-3c55977e89f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos">
+      <UniqueIdentifier>{20aab9cf-431a-43c5-8668-d02fe5706e84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Airplane Demo">
+      <UniqueIdentifier>{4fd88fce-c0c6-43e9-9616-44047ee81b8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Bridge Demo">
+      <UniqueIdentifier>{88147b12-ccf8-4e87-8052-78251bd0a8b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Cloth Demo">
+      <UniqueIdentifier>{b61b3623-53e8-4c9c-91e5-d6e5d8f058f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Projectile Demo">
+      <UniqueIdentifier>{660281b8-c36d-4d39-afd4-8496651b9abf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\SwingRope Demo">
+      <UniqueIdentifier>{8161d6f0-07e0-4002-b286-c9d527eed34e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision\BroadPhase">
+      <UniqueIdentifier>{f2ba3054-9d49-47d2-a15e-b3113f2be1fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision\NarrowPhase">
+      <UniqueIdentifier>{3df59775-f39e-4fd4-90a7-7e4ff61ec845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\CollisionTest Demo">
+      <UniqueIdentifier>{bf74fa33-95c9-4288-8127-0064d66f7053}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Math\Matrix3X4.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Matrix3X3.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\AirplaneDemo.cpp">
+      <Filter>Demos\Airplane Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\BridgeDemo.cpp">
+      <Filter>Demos\Bridge Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\ClothDemo.cpp">
+      <Filter>Demos\Cloth Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\CollisionTest.cpp">
+      <Filter>Demos\CollisionTest Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\Physics_Engine_Demo.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision\NarrowPhase.cpp">
+      <Filter>Collision\NarrowPhase</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision\contacts.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision\BroadPhase.cpp">
+      <Filter>Collision\BroadPhase</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugRender\DebugDrawManager.cpp">
+      <Filter>DebugRender</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynamics\plinks.cpp">
+      <Filter>Dynamics\Particle Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynamics\pfGen.cpp">
+      <Filter>Dynamics\Particle Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynamics\pcontacts.cpp">
+      <Filter>Dynamics\Particle Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynamics\particle.cpp">
+      <Filter>Dynamics\Particle Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynamics\body.cpp">
+      <Filter>Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynamics\cloth.cpp">
+      <Filter>Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\ProjectileDemo.cpp">
+      <Filter>Demos\Projectile Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\random.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynamics\force_gen.cpp">
+      <Filter>Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynamics\pworld.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Math\Vector3.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix3X4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix3X3.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Quaternion.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\precision.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\AirplaneDemo.h">
+      <Filter>Demos\Airplane Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\BridgeDemo.h">
+      <Filter>Demos\Bridge Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\ClothDemo.h">
+      <Filter>Demos\Cloth Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\CollisionTest.h">
+      <Filter>Demos\CollisionTest Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Physics_Engine_Demo.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\NarrowPhase.h">
+      <Filter>Collision\NarrowPhase</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\contacts.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\BroadPhase.h">
+      <Filter>Collision\BroadPhase</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imgui.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\stb_rect_pack.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\stb_textedit.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\stb_truetype.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugRender\DebugDrawManager.h">
+      <Filter>DebugRender</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynamics\plinks.h">
+      <Filter>Dynamics\Particle Engine\Particle Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynamics\pfGen.h">
+      <Filter>Dynamics\Particle Engine\Particle Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynamics\pcontacts.h">
+      <Filter>Dynamics\Particle Engine\Particle Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynamics\particle.h">
+      <Filter>Dynamics\Particle Engine\Particle Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynamics\cloth.h">
+      <Filter>Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\ProjectileDemo.h">
+      <Filter>Demos\Projectile Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imconfig.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynamics\body.h">
+      <Filter>Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\random.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\core.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynamics\constraint.h">
+      <Filter>Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynamics\force_gen.h">
+      <Filter>Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynamics\pworld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgui.ini" />
+  </ItemGroup>
+</Project>
