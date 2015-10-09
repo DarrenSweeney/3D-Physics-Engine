@@ -38,25 +38,18 @@ void RigidBody::integrate(real duration)
 	// new position and orientation.
 	calculateDerivedData();
 
-	// Clear accumulators
-	clearAccumulators();
-
-	/*
-		Update the kinetic energy store, and possibly put the body 
-		to sleep.
-	*/
 	if (canSleep)
 	{
-		real currentMotion = velocity.squareMagnitude() + rotation.squareMagnitude();
+		//	E_k = 1/2 mv^2
+		real kineticEnrgy = inverseMass * (velocity * velocity);
 
-		real bias = real_pow(0.5, duration);
-		motion = bias * motion + (1 - bias) * currentMotion;
-		
-		if (motion < sleepEpsolion)
+		if (kineticEnrgy <= 0.00001)
+		{
 			setAwake(false);
-		else if (motion > 10 * sleepEpsolion)
-			motion = 10 * sleepEpsolion;
+		}
 	}
+
+	clearAccumulators();
 }
 
 void RigidBody::setAwake(const bool awake)
@@ -64,7 +57,7 @@ void RigidBody::setAwake(const bool awake)
 	if (awake)
 	{
 		isAwake = true;
-		//motion = sleepEpsolion * 2.0f;
+		motion = sleepEpsolion * 2.0f;
 	}
 	else
 	{

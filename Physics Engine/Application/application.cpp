@@ -433,9 +433,9 @@ int Application::Execute()
 					ImGui::TextWrapped("Demonstration of particle constraints to make a bridge structure.");
 
 				if (getDemo(4))	// Collision Test Demo.
-					ImGui::TextWrapped("Collision Test Demo.\nPress 'R' to reset the scene.");
-				
-				ImGui::TextWrapped("\n\nThis is an early look into my 3D physics engine that I am working on.");
+					ImGui::TextWrapped("Rigid body collision Demo.\n\nPress 'R' to reset the scene.");
+
+				ImGui::TextWrapped("\nFollow me on twitter @_DarrenSweeney\nMy Website: darrensweeney.net");
 			}
 
 			ImGui::End();

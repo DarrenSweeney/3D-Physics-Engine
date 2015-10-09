@@ -19,10 +19,10 @@ void Ball::render()
 	GLfloat mat[16];
 	body->getGLTransform(mat);
 
-	if (body->getAwake())
+	if (body->getAwake() == true)
 		glColor3f(1.0f, 0.7f, 0.7f);
 	else
-		glColor3f(0.7f, 0.7f, 1.0f);
+		glColor3f(0.0f, 0.0f, 0.0f);
 
 	glColor3f(1, .3f, 0);
 	glPushMatrix();
@@ -65,7 +65,7 @@ void Ball::setState(Vector3 &position, Quaternion &orientation, real radius, Vec
 	body->clearAccumulators();
 	body->setAcceleration(0, -10.0f, 0);
 
-	body->setAwake();
+	body->setAwake(true);
 
 	body->calculateDerivedData();
 }
@@ -89,12 +89,13 @@ void Box::render()
 
 	if (isOverlapping)
 		glColor3f(0.7f, 1.0f, 0.7f);
-	else if (body->getAwake())
-		glColor3f(1.0f, 0.7f, 0.7f);
+	
+	if (body->getAwake() == true)
+		glColor3f(0.0f, 0.2f, 0.8f);
 	else
-		glColor3f(0.7f, 0.7f, 1.0f);
+		glColor3f(0.0f, 0.2f, 0.8f);
 
-	glColor3f(0.0f, 0.2f, 0.8f);
+	//glColor3f(0.0f, 0.2f, 0.8f);
 	glPushMatrix();
 	glMultMatrixf(mat);
 	glScalef(halfSize.x * 2, halfSize.y * 2, halfSize.z * 2);
@@ -104,7 +105,6 @@ void Box::render()
 
 void Box::renderShadow()
 {
-	// Get the OpenGL transformation.
 	GLfloat mat[16];
 	body->getGLTransform(mat);
 

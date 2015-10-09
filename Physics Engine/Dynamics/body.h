@@ -22,7 +22,7 @@ namespace Physics_Engine
 		bool canSleep;
 		real motion;
 
-		real sleepEpsolion;
+		real sleepEpsolion = 0.0000001;
 		Matrix3X4 transformMatrix;
 		Vector3 forceAccum;
 		Vector3 torqueAccum;
